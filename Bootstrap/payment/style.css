@@ -1,0 +1,93 @@
+/* Red border for invalid or incomplete fields */
+.redInputField {
+    border: 2px solid red;
+}
+
+/* Green border for valid fields */
+.greenInputField {
+    border: 2px solid green;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Specific styles for different fields */
+
+/* For text fields (e.g., first name, last name, address, city, zip, phone) */
+#first-name,
+#last-name,
+#billing-address,
+#city,
+#zip,
+#phone {
+    transition: border-color 0.3s ease;
+}
+
+/* For country dropdown */
+#country {
+    transition: border-color 0.3s ease;
+}
+
+/* For card number field */
+.CardInfoNumber {
+    transition: border-color 0.3s ease;
+}
+
+/* For expiration month dropdown */
+#dropDownMonthBtn {
+    transition: border-color 0.3s ease;
+}
+
+/* For expiration year dropdown */
+#dropDownYearBtn {
+    transition: border-color 0.3s ease;
+}
+
+/* Styles for focus states (for any fields the user interacts with) */
+input:focus,
+select:focus,
+.dropDown:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Blue focus outline */
+}
+
+/* Specific styles when a field is invalid */
+input:invalid,
+select:invalid,
+.dropDown:invalid {
+    border-color: red;
+    /* Red border for invalid fields */
+}
+
+/* For error messages that are visible when a field is invalid */
+.error-message {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+}
+
+/* If the field is empty, the user hasn't filled it properly */
+input:empty,
+select:empty,
+.dropDown:empty {
+    border-color: red;
+}
+
+/* For valid fields */
+input:valid,
+select:valid,
+.dropDown:valid {
+    border-color: green;
+    /* Green border for valid fields */
+}
+
+/* For the "Jätka" (Continue) button, to indicate it is disabled if validation fails */
+.NextButton:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}

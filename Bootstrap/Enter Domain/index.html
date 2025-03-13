@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sisesta Domeen</title>
+  <link rel="icon" href="../K.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
+    /* General Typography */
     p {
       font-size: 18px;
     }
@@ -24,7 +26,7 @@
       background-color: rgb(226, 226, 226);
     }
 
-    /* Domain Input Style */
+    /* Domain Input Styles */
     .domain-input {
       border: none;
       border-radius: 20px;
@@ -38,7 +40,12 @@
       box-shadow: 0px 0px 2px 1px rgb(214, 214, 214);
     }
 
-    /* Centering the form elements */
+    /* Button Styles */
+    .NextButton {
+      width: 100%;
+    }
+
+    /* Layout and Centering */
     .centered {
       display: flex;
       justify-content: center;
@@ -56,13 +63,41 @@
 
     .input-group {
       width: 100%;
+      margin-bottom: 20px;
     }
 
-    .NextButton {
+    /* Heading Styles */
+    h1 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    /* Progress Bar Styles */
+    .progress-wrapper {
       width: 100%;
+      margin-bottom: 20px;
     }
 
-    /* Horizontal Rule for Step Progress */
+    .progress {
+      height: 20px;
+      /* Height for visibility */
+      background-color: #f3f3f3;
+      /* Lighter background */
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background-color: #007bff;
+      /* Primary color */
+      border-radius: 10px;
+      transition: width 0.5s ease-in-out;
+      /* Smooth transition */
+    }
+
+    /* Step Progress (Horizontal Rule with Steps) */
     .hr-container {
       position: relative;
       margin-top: 20px;
@@ -85,6 +120,7 @@
 
     .step-marker.active {
       color: #4caf50;
+      /* Green color for active step */
     }
 
     .step-container {
@@ -98,16 +134,61 @@
       text-align: center;
       flex: 1;
     }
+
+    /* Navbar Styles */
+    .navbar {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .navbar-brand img {
+      max-width: 100%;
+      /* Image scales with the navbar */
+      height: auto;
+      /* Maintains aspect ratio */
+      max-height: 50px;
+      /* Cap the height */
+      object-fit: contain;
+      /* Prevents image distortion */
+    }
   </style>
 </head>
 
 <body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../imgs/K.svg" alt="K">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div class="container-md centered">
     <!-- Form Content Centered -->
     <div class="form-container">
+
+      <!-- Progress bar -->
+      <div class="progress-wrapper mb-4">
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0"
+          aria-valuemax="100">
+          <div class="progress-bar" style="width: 40%;"></div>
+        </div>
+      </div>
+
       <h1>Sisesta Domeen</h1>
-
-
 
       <!-- Domain Input Fields -->
       <div class="input-group mb-3">

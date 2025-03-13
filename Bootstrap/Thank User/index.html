@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aitäh Kiri</title>
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEJGo9vSxF6gEG95uFAD6ODF9yZ1VvsXg5E3XW2MjRUWcbNj6xA36Q0dChyyu" crossorigin="anonymous">
-
+    <link rel="icon" href="../K.ico">
     <style>
         body {
             background-color: #f4f6f9;
+            font-family: 'Arial', sans-serif;
         }
 
         .card {
@@ -26,14 +26,16 @@
         }
 
         .card h1 {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
             color: #343a40;
+            margin-bottom: 20px;
         }
 
         .card p {
             font-size: 1rem;
             color: #6c757d;
+            line-height: 1.6;
         }
 
         .text-end {
@@ -45,40 +47,84 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+
+        /* Improved spacing for better readability */
+        .container-md {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .thank-you-message {
+            font-size: 1.2rem;
+            color: #495057;
+            font-weight: 600;
+        }
+
+        .signature {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #6c757d;
+            font-size: 0.8rem;
+        }
+
+        /* Center the card */
+        .container-md {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* Full viewport height */
+        }
+
+        /* Adjusting card width to make it responsive */
+        .card {
+            width: 100%;
+            max-width: 600px;
+            /* Limit the width of the card */
+        }
     </style>
 </head>
 
 <body>
-    <div class="container-md d-flex justify-content-center align-items-center min-vh-100 py-5">
-        <div class="card shadow-lg p-4 rounded-3" style="max-width: 600px; width: 100%;">
+    <div class="container-md">
+        <div class="card shadow-lg p-4 rounded-3">
             <div class="card-body">
                 <h1 class="text-center mb-4">
                     Lugupeetud [Kliendi nimi],
                 </h1>
                 <p>
                     Täname teid sooja usalduse eest ja tervitame teid meie [ettevõtte nimi] perekonda! Oleme väga
-                    tänulikud,
-                    et valisite meie tooted/teenused, ja loodame, et need toovad teile palju rahulolu ja kasu.
+                    tänulikud, et valisite meie tooted/teenused. Me usume, et need toovad teile palju rahulolu ja kasu.
                 </p>
                 <p>
-                    Meie meeskond teeb alati oma parima, et pakkuda teile kõrget kvaliteeti ja suurepärast teenindust.
-                    Kui
-                    teil on küsimusi või vajate täiendavat abi, ärge kõhelge meiega ühendust võtta. Me oleme alati
-                    valmis
-                    teid
-                    aitama!
+                    Meie meeskond on alati valmis pakkuma teile parimat teenindust. Kui teil on küsimusi või vajate abi,
+                    ärge kõhelge meiega ühendust võtta. Me oleme siin, et teid aidata!
                 </p>
                 <p>
-                    Soovime teile toredat päeva ja loodame, et teeme teie jaoks veel palju toredaid oste tulevikus.
+                    Soovime teile imelisi hetki ja loodame teha teiega koostööd ka tulevikus.
                 </p>
-                <p class="mt-4 text-end">
+
+                <p class="thank-you-message mt-4 text-center">
+                    Aitäh, et valisite meid!
+                </p>
+
+                <p class="signature mt-4 text-end">
                     Parimate soovidega,<br>
                     [Teie nimi]<br>
-                    [Ettevõtte nimi]<br>
-                    [Ettevõtte kontaktandmed]
+                    [Ettevõtte nimi]
                 </p>
             </div>
         </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; [Aasta] [Ettevõtte nimi]. Kõik õigused kaitstud.</p>
     </div>
 
     <!-- Bootstrap JS -->

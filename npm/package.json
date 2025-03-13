@@ -1,0 +1,30 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "start": "webpack serve --config webpack.config.js --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bulma": "^1.0.3",
+    "webpack-cli": "^6.0.1"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "nunjucks": "^3.2.4",
+    "nunjucks-loader": "^3.0.0",
+    "sass": "^1.85.1",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.98.0",
+    "webpack-dev-server": "^5.2.0"
+  }
+}

@@ -24,43 +24,42 @@
                     Documentation
                 </a>
 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
 
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item is-selected">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary">
-                            <strong>Sign up</strong>
-                        </a>
-                        <a class="button is-light">
-                            Log in
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
+    <div class="is-flex is-flex-direction-column" style="height: 100vh;">
+        <!-- Centered content at the top (move it upwards) -->
+        <div class="is-flex is-justify-content-center is-align-items-center" style="flex-grow: 1; margin-top: -80px;">
+            <div class="box d-flex">
+                <input class="input is-info" type="text" placeholder="Domain name" />
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>Click me</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item"> .ee </a>
+                        <a href="#" class="dropdown-item"> .com </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content positioned at the bottom -->
+            <div class="box results">
+                <!-- Add your results here -->
+            </div>
+        </div>
+
+
+
 
 
 
